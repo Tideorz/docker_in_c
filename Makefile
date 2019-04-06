@@ -19,4 +19,4 @@ test_cgroup_memory: test_cgroup_memory.o
 	$(CC) -c $<
 
 clean:
-	rm -rf *.o cdocker user
+	rm -rf *.o $(objects)
