@@ -11,6 +11,8 @@ spec:
       labels:
         app: ssd-monitor
     spec:
+      nodeSelector:
+        disk: ssd
       containers:
       - name: main
         image: luksa/ssd-monitor
